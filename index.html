@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Link naar CSS -->
     <link rel="stylesheet" href="styles/styles.css">
-    
     <!-- Link naar JavaScript  -->
     <script src="scripts/script.js"></script>
-
     <title>Platform Ad</title>
 </head>
 
@@ -18,89 +15,55 @@
     <header>
         <!-- Menubalk met doelgroep wisselaar, taal switcher en website navigatie -->
         <nav>
-
             <!-- Eerste navigatiebalk -->
             <div class="top-navigation-primary">
-
-                 <div class="doelgroep">
-                    <!-- Link naar home-pagina, is de studenten doelgroep -->
-                    <a href="index.html">Studenten</a>
-                     <!-- link naar professionele doelgroep gedeelte van website -->
-                    <a href="professionals.html">Professionals</a>
-                </div>
-
+                <!-- Link naar home-pagina, is de studenten doelgroep -->
+                <a href="index.html">Studenten</a>
+                <!-- link naar professionele doelgroep gedeelte van website -->
+                <a href="professionals.html">Professionals</a>
                 <!-- Taal switcher -->
-                 <div class="taal-switch">
+                <div class="language">
                     <button class="nederlands">NL</button>
                     <button class="engels">EN</button>
                 </div>
-
             </div>
 
             <!-- Tweede navigatiebalk -->
             <div class="top-navigation-secondary">
-
                 <!-- Navigatie menu naar andere pagina's op de website -->
-                <ul class="nav-list">
-
-                    <!-- Navigatie-items -->
-                    <li class="nav-item-1.0">
-                        <a href="#">Wat is een Ad</a>
-
-                        <!-- Drop-down navigatie in 'wat is een ad' -->
-                        <ul class="drop-down">
-                            <li class="nav-item-1.1">
-                                <a href="#">Doorstroom</a>
-                            </li>
-                        </ul>
-
-                    </li>
-
-                    <li class="nav-item-2.0">
-                        <a href="#">Ad Talent Award</a>
-                    </li>
-
-                    <li class="nav-item-3.0">
-                        <a href="#">Nieuws</a>
-                    </li>
-
-                    <li class="nav-item-4.0">
-                        <a href="#">Evenementen</a>
-                    </li>
-
+                <ul>
+                    <li><a href="#">Wat is een Ad</a></li>
+                    <li class="drop-down"><a href="#">Doorstroom</a></li>
+                    <li><a href="#">Ad Talent Award</a></li>
+                    <li><a href="#">Nieuws</a></li>
+                    <li><a href="#">Evenementen</a></li>
                 </ul>
-
                 <!-- Hamburger menu voor telefoon's en tablets-->
                 <div class="ham-menu">
                     <a href="#"><img src="assets/hamburger-menu.png" alt="hamburger-menu" height="100"></a>
                 </div>
-
                 <!-- Logo die naar home-pagina linkt -->
                 <div class="logo">
                     <a href="index.html"><img src="assets/logo.png" alt="logo" height="100"></a>
                 </div>
-
                 <!-- Zoekbalk icoon -->
                 <div class="search-icon">
                     <a href="#"><img src="assets/search-icon.png" alt="search-icon" height="100"></a>
                 </div>
-
-
             </div>
         </nav>
     </header>
     
     <main>
-
         <!-- Eerste gedeelte op home-pagina -->
-        <section class="home-pagina-1">
+        <section class="welcome">
             <h1>Welkom bij het Platform Ad</h1>
             <!-- Link naar andere pagina op de website -->
             <a href="#"><h2>Wat is een Ad?</h2></a>
         </section>
 
         <!-- Tweede gedeelte op home-pagina -->
-        <div class="home-pagina-2">
+        <div class="navigation-on-page">
             <!-- Linken naar andere pagina's op website -->
             <a href="#">Doorstroom</a>
             <a href="#">Ad Talent Award</a>
@@ -108,65 +71,54 @@
         </div>
 
         <!-- Derde gedeelte op home-pagina -->
-        <section class="home-pagina-3">
-
+        <section class="latest-news">
             <!-- Link naar andere pagina op website -->
             <a href="#"><h2>Laatste nieuws</h2></a>
-
             <!-- Eerste nieuws-item -->
-            <article class="nieuws-1">
+            <article>
             <h3>Save the date</h3>
             <p>Landelijke Ad-dag 17 april 2026 locatie: Hanze - Groningen</p>
             <a href="#">Lees meer</a>
             </article>
-
             <!-- Tweede nieuws-item -->
-            <article class="nieuws-2">
+            <article>
             <h3>YESSSS! Het spel Pionieren! is er!</h3>
             <p>Ervaar het perspectief van pioniersstudenten en ontdek hoe jij écht verschil kunt maken</p>
             <a href="#">Lees meer</a>
             </article>
-
             <!-- Derde nieuws-item -->
-            <article class="nieuws-3">
+            <article>
             <h3>Save the date</h3>
             <p>'Making Waves' - Samen bouwen aan impactmakerschap op niveau 5</p>
             <a href="#">Lees meer</a>
             </article>
-
             <!-- Knop naar links voor meer nieuws-items-->
             <a href="#">❮</a>
-
             <!-- Knop naar rechts voor meer nieuws-items-->
              <a href="#">❯</a>
-
         </section>
 
         <!-- Laatste gedeelte op home-pagina -->
-        <section class="home-pagina-4">
+        <section class="participating-colleges">
             <h2>Deelnemende Hogescholen</h2>
-
             <!-- Carousel met logo's en links van deelnemende hogescholen -->
-            <ul class="deelnemende-hogescholen">
+            <ul>
                 <li><a href="https://www.hva.nl/"><img src="assets/hva-logo.png" alt="Hogeschool van Amsterdam" height="100"></a></li>
                 <li><a href="https://www.inholland.nl/"><img src="assets/hogeschool-inholland.png" alt="Hogeschool Inholland" height="100"></a></li>
             </ul>
-
             <!-- Knop naar links voor meer hogescholen-->
             <a href="#">❮</a>
-
             <!-- Knop naar rechts voor meer hogescholen-->
              <a href="#">❯</a>
-
         </section>
 
         <!-- Losse knop: Back to top -->
         <a href="#">^</a>
-
     </main>
 
     <footer>
-        <section class="footer-1">
+        <!-- Footer sectie met namen van bestuursleden -->
+        <section class="board-members">
             <h2>Namen bestuur</h2>
             <a href="">Roland van der Poel (voorzitter)</a>
             <a href="">Carolien van Riswijk</a>
@@ -175,15 +127,14 @@
             <a href="">Demi Blok</a>
         </section>
 
-        <section class="footer-2">
+        <!-- Footer sectie met navigatie naar 'over ons' pagina en 'contact'pagina -->
+        <section class="platform-ad">
             <h2>Platform Ad</h2>
             <ul>
                 <li><a href="">Over Ons</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            
         </section>
-
     </footer>
 
 </body>
