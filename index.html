@@ -14,44 +14,35 @@
 
     <header>
         <!-- Menubalk met doelgroep wisselaar, taal switcher en website navigatie -->
-        <nav>
-            <!-- Eerste navigatiebalk -->
-            <div class="top-navigation-primary">
-                <!-- Link naar home-pagina, is de studenten doelgroep -->
-                <a href="index.html">Studenten</a>
-                <!-- link naar professionele doelgroep gedeelte van website -->
-                <a href="professionals.html">Professionals</a>
-                <!-- Taal switcher -->
-                <div class="language">
-                    <button class="nederlands">NL</button>
-                    <button class="engels">EN</button>
-                </div>
-            </div>
+        <!-- Eerste navigatiebalk -->
+        <nav class="audience-and-language">
+            <!-- Link naar home-pagina, is de studenten doelgroep -->
+            <a href="index.html">Studenten</a>
+            <!-- link naar professionele doelgroep gedeelte van website -->
+            <a href="professionals.html">Professionals</a>
+            <!-- Taal switcher -->
+            <a href="" class="dutch">NL</a>
+            <a href="" class="english">EN</a>
+        </nav>
 
             <!-- Tweede navigatiebalk -->
-            <div class="top-navigation-secondary">
-                <!-- Navigatie menu naar andere pagina's op de website -->
-                <ul>
-                    <li><a href="#">Wat is een Ad</a></li>
-                    <li class="drop-down"><a href="#">Doorstroom</a></li>
-                    <li><a href="#">Ad Talent Award</a></li>
-                    <li><a href="#">Nieuws</a></li>
-                    <li><a href="#">Evenementen</a></li>
-                </ul>
-                <!-- Hamburger menu voor telefoon's en tablets-->
-                <div class="ham-menu">
-                    <a href="#"><img src="assets/hamburger-menu.png" alt="hamburger-menu" height="100"></a>
-                </div>
-                <!-- Logo die naar home-pagina linkt -->
-                <div class="logo">
-                    <a href="index.html"><img src="assets/logo.png" alt="logo" height="100"></a>
-                </div>
-                <!-- Zoekbalk icoon -->
-                <div class="search-icon">
-                    <a href="#"><img src="assets/search-icon.png" alt="search-icon" height="100"></a>
-                </div>
-            </div>
+        <nav class="navigation">
+            <!-- Navigatie menu naar andere pagina's op de website -->
+            <ul>
+                <li><a href="#">Wat is een Ad</a></li>
+                <li class="drop-down"><a href="#">Doorstroom</a></li>
+                <li><a href="#">Ad Talent Award</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Evenementen</a></li>
+            </ul>
+            <!-- Hamburger menu voor telefoon's en tablets-->
+            <a href="#" class="ham-menu"><img src="assets/hamburger-menu.png" alt="hamburger-menu" height="100"></a>
+            <!-- Logo die naar home-pagina linkt -->
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="logo" height="100"></a>
+            <!-- Zoekbalk icoon -->
+            <a href="#" class="search-icon"><img src="assets/search-icon.png" alt="search-icon" height="100"></a>
         </nav>
+        
     </header>
     
     <main>
@@ -59,21 +50,21 @@
         <section class="welcome">
             <h1>Welkom bij het Platform Ad</h1>
             <!-- Link naar andere pagina op de website -->
-            <a href="#"><h2>Wat is een Ad?</h2></a>
+            <h2><a href="#">Wat is een Ad?</a></h2>
         </section>
 
         <!-- Tweede gedeelte op home-pagina -->
-        <div class="navigation-on-page">
+        <ul class="navigation-on-page">
             <!-- Linken naar andere pagina's op website -->
-            <a href="#">Doorstroom</a>
-            <a href="#">Ad Talent Award</a>
-            <a href="#">Evenementen</a>
-        </div>
+            <li><a href="#">Doorstroom</a></li>
+            <li><a href="#">Ad Talent Award</a></li>
+            <li><a href="#">Evenementen</a></li>
+        </ul>
 
         <!-- Derde gedeelte op home-pagina -->
         <section class="latest-news">
             <!-- Link naar andere pagina op website -->
-            <a href="#"><h2>Laatste nieuws</h2></a>
+            <h2><a href="#">Laatste nieuws</a></h2>
             <!-- Eerste nieuws-item -->
             <article>
             <h3>Save the date</h3>
@@ -119,7 +110,7 @@
     <footer>
         <!-- Footer sectie met namen van bestuursleden -->
         <section class="board-members">
-            <h2>Namen bestuur</h2>
+            <h2>Namen an bestuursleden</h2>
             <a href="">Roland van der Poel (voorzitter)</a>
             <a href="">Carolien van Riswijk</a>
             <a href="">Nina Spithost</a>
