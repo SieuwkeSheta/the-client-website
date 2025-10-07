@@ -35,12 +35,12 @@
                 <li><a href="#">Nieuws</a></li>
                 <li><a href="#">Evenementen</a></li>
             </ul>
-            <!-- Hamburger menu voor telefoon's en tablets-->
-            <a href="#" class="ham-menu"><img src="assets/hamburger-menu.png" alt="hamburger-menu" height="100"></a>
+            <!-- Hamburger menu voor telefoons en tablets-->
+            <button class="ham-menu"><svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></button>
             <!-- Logo die naar home-pagina linkt -->
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="logo" height="100"></a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="ad-connect-logo" height="100"></a>
             <!-- Zoekbalk icoon -->
-            <a href="#" class="search-icon"><img src="assets/search-icon.png" alt="search-icon" height="100"></a>
+            <a href="#" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 640 640"><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg></a>
         </nav>
         
     </header>
@@ -51,6 +51,7 @@
             <h1>Welkom bij het Platform Ad</h1>
             <!-- Link naar andere pagina op de website -->
             <h2><a href="#">Wat is een Ad?</a></h2>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="50"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"/></svg></a>
         </section>
 
         <!-- Tweede gedeelte op home-pagina -->
@@ -65,28 +66,36 @@
         <section class="latest-news">
             <!-- Link naar andere pagina op website -->
             <h2><a href="#">Laatste nieuws</a></h2>
-            <!-- Eerste nieuws-item -->
-            <article>
-            <h3>Save the date</h3>
-            <p>Landelijke Ad-dag 17 april 2026 locatie: Hanze - Groningen</p>
-            <a href="#">Lees meer</a>
-            </article>
-            <!-- Tweede nieuws-item -->
-            <article>
-            <h3>YESSSS! Het spel Pionieren! is er!</h3>
-            <p>Ervaar het perspectief van pioniersstudenten en ontdek hoe jij écht verschil kunt maken</p>
-            <a href="#">Lees meer</a>
-            </article>
-            <!-- Derde nieuws-item -->
-            <article>
-            <h3>Save the date</h3>
-            <p>'Making Waves' - Samen bouwen aan impactmakerschap op niveau 5</p>
-            <a href="#">Lees meer</a>
-            </article>
+            <ul class="news-container">
+                <!-- Eerste nieuws-item -->
+                <li>
+                    <article>
+                        <h3>Save the date</h3>
+                        <p>Landelijke Ad-dag 17 april 2026 locatie: Hanze - Groningen</p>
+                        <a href="#">Lees meer >></a>
+                    </article>
+                </li>
+                <!-- Tweede nieuws-item -->
+                <li>
+                    <article>
+                        <h3>YESSSS! Het spel Pionieren! is er!</h3>
+                        <p>Ervaar het perspectief van pioniersstudenten en ontdek hoe jij écht verschil kunt maken</p>
+                        <a href="#">Lees meer</a>
+                    </article>
+                </li>
+                <!-- Derde nieuws-item -->
+                <li>
+                    <article>
+                        <h3>Save the date</h3>
+                        <p>'Making Waves' - Samen bouwen aan impactmakerschap op niveau 5</p>
+                        <a href="#">Lees meer</a>
+                    </article>
+                </li>
+            </ul>
             <!-- Knop naar links voor meer nieuws-items-->
-            <a href="#">❮</a>
+            <button class="prev1">❮</button>
             <!-- Knop naar rechts voor meer nieuws-items-->
-             <a href="#">❯</a>
+            <button class="next1">❯</button>
         </section>
 
         <!-- Laatste gedeelte op home-pagina -->
@@ -94,13 +103,23 @@
             <h2>Deelnemende Hogescholen</h2>
             <!-- Carousel met logo's en links van deelnemende hogescholen -->
             <ul>
-                <li><a href="https://www.hva.nl/"><img src="assets/hva-logo.png" alt="Hogeschool van Amsterdam" height="100"></a></li>
-                <li><a href="https://www.inholland.nl/"><img src="assets/hogeschool-inholland.png" alt="Hogeschool Inholland" height="100"></a></li>
+                <li><a href="https://www.hva.nl/" target="_blank"><img src="assets/hva-logo.png" alt="Hogeschool van Amsterdam" width="100"></a></li>
+                <li><a href="https://www.han.nl/" target="_blank"><img src="assets/han-logo.png" alt="HAN Hogeschool" width="100"></a></li>
+                <li><a href="https://www.inholland.nl/" target="_blank"><img src="assets/hogeschool-inholland.png" alt="Hogeschool Inholland" width="100"></a></li>
+                <li><a href="https://www.ipabo.nl/" target="_blank"><img src="https://media.academictransfer.com/cq_MNi5aMcsMWfPIBivA3glgLf8=/fit-in/490x162/filters:upscale():fill(white)/logos/hogeschool-ipabo-nl-wide_QDq5Xxb.png" alt="iPabo Hogeschool" width="100"></a></li>
+                <li><a href="https://www.kpz.nl/" target="_blank"><img src="assets/kpz-hogeschool.png" alt="KPZ Hogeschool" width="100"></a></li>
+                <li><a href="https://www.hsleiden.nl/" target="_blank"><img src="https://media.academictransfer.com/0688ZXoLFb-MQe8kIeavXhko-r8=/fit-in/490x162/filters:upscale():fill(white)/logos/hogeschool-leiden-en-wide_rBGqewg.png" alt="Hogeschool in Leiden" width="100"></a></li>
+                <li><a href="https://www.hvhl.nl/" target="_blank"><img src="https://www.watercampus.nl/wp-content/uploads/2018/07/Van-Hall-Larenstein-logo.png" alt="Hogeschool van Hall Larenstein" width="100"></a></li>
+                <li><a href="https://www.hku.nl/" target="_blank"><img src="https://turnclub.org/wp-content/uploads/2024/01/hku_logo.png" alt="Hogeschool voor de Kunst Utrecht" width="100"></a></li>
+                <li><a href="https://www.hu.nl/" target="_blank"><img src="https://oshu.nl/wp-content/uploads/2023/07/logo-hogeschool-utrecht-e1561627046643.png" alt="Hogeschool Utrecht" width="100"></a></li>
+                <li><a href="https://www.windesheim.nl/" target="_blank"><img src="https://www.windesheim.nl/getmedia/c16ea1ba-e595-4e5d-ab98-859232d81ee1/logo-windesheim.png" alt="Hogeschool Windesheim" width="100"></a></li>
+                <li><a href="https://hz.nl/" target="_blank"><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/hz-university-of-applied-sciences-logo.png" alt="Hogeschool Vlissingen" width="100"></a></li>
+                <li><a href="https://www.iselinge.nl/" target="_blank"><img src="https://www.bsdehogevoorde.nl/media/vpveiszw/logo-iselinge-hogeschool.png" alt="Hogeschool Iselinge" width="100"></a></li>
             </ul>
-            <!-- Knop naar links voor meer hogescholen-->
-            <a href="#">❮</a>
-            <!-- Knop naar rechts voor meer hogescholen-->
-             <a href="#">❯</a>
+            <!-- Knop naar links voor meer deelnemende hogescholen-->
+            <button class="prev2">❮</button>
+            <!-- Knop naar rechts voor meer deelnemende hogescholen-->
+            <button class="next2">❯</button>
         </section>
 
         <!-- Losse knop: Back to top -->
@@ -110,7 +129,7 @@
     <footer>
         <!-- Footer sectie met namen van bestuursleden -->
         <section class="board-members">
-            <h2>Namen an bestuursleden</h2>
+            <h2>Namen van bestuursleden</h2>
             <a href="">Roland van der Poel (voorzitter)</a>
             <a href="">Carolien van Riswijk</a>
             <a href="">Nina Spithost</a>
