@@ -33,42 +33,36 @@ De kleuren van de website heb ik veranderd naar donkerblauw met gele accenten, v
 
 De website is responsive en is Mobile first ontworpen en gemaakt.
 
-<img width="1800" height="760" alt="all-devices-black" src="https://github.com/user-attachments/assets/449dc752-a7dd-42f6-a25b-b5c4f1deb29f" />
+<img width="1000" alt="all-devices-black" src="https://github.com/user-attachments/assets/449dc752-a7dd-42f6-a25b-b5c4f1deb29f" />
 
 *Mockup van home-pagina*
 
 Link naar de website: https://sieuwkesheta.github.io/the-client-website/
 
-#### Schetsen
+### Schetsen
 Tijdens het ontwerpen heb ik gebruik gemaakt van Sitemapping, Wireframes, Wireflows en Prototypes op figma.
 
-*Ontwerp schets sitemap*
-![Sitemap Ad Connect 25-09-2025](https://github.com/user-attachments/assets/0f78a283-9af3-44ae-b7ee-d4d03fefc166)
+*Ontwerp schets sitemap, wireframe en wireflow*
 
-*1e ontwerp schets op papier*
-![1e schets Ad Connect 23-09-2025](https://github.com/user-attachments/assets/4e94e6ec-fa28-4da3-945a-c6c72be9745d)
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/0f78a283-9af3-44ae-b7ee-d4d03fefc166" />
 
-*1e wireflow op papier*
-![Wireframe en Wireflow - Telefoon - AD Connect 25-09-2025](https://github.com/user-attachments/assets/83410398-7a69-4bcd-beef-ad19bfbd9f70)
+<img height="200" alt="image" src="https://github.com/user-attachments/assets/4e94e6ec-fa28-4da3-945a-c6c72be9745d" />
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/83410398-7a69-4bcd-beef-ad19bfbd9f70" />
 
 #### Figma
-Ik heb nog geen kleuren toegevoegd in mijn figma ontwerpen.
+Na het schetsen ben ik op figma verder gegaan. Er zijn nog geen kleuren toegevoegd aan het ontwerp.
 
-*Telefoon wireframe*
-![Telefoon _ Wireframe Home-Pagina _ Studenten](https://github.com/user-attachments/assets/ffa22bcf-76cc-4513-bc76-d8d8528319b8)
+Link naar de issue met de figma wireframe, wireflow, breakdownschets en prototype: https://github.com/SieuwkeSheta/the-client-website/issues/4 
 
-*Tablet Wireframe*
-![Tablet _ Wireframe Home-Pagina _ Studenten](https://github.com/user-attachments/assets/a687fc3c-22ca-47af-a8b8-b5172843f5b0)
 
-*Desktop Wireframe*
-![Desktop _ Wireframe Home-Pagina _ Studenten](https://github.com/user-attachments/assets/4bd2fc65-9df6-4678-aef7-5c17a765b5b6)
-
-#### Belangrijke features:
+### Belangrijke features:
 - Het hamburgermenu 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/b3d3e41f-721a-4944-a2bc-df781ebfc0ba" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/b3d3e41f-721a-4944-a2bc-df781ebfc0ba" />
 
 - De Carousel met knoppen
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/43a60d12-579d-424e-88a4-2dc8ce4a6a4b" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/43a60d12-579d-424e-88a4-2dc8ce4a6a4b" />
+
 
 - De website is responsive op meerdere apparaten
 
