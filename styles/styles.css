@@ -1,1 +1,476 @@
-/* CSS */
+/* Algemeen */
+* {
+    /* Zorgt ervoor dat de padding en border bij de breedte horen */
+    box-sizing: border-box;
+}
+
+html {
+    /* Scrollen in html element-gaat smooth */
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+
+    font-family: Arial, Helvetica, sans-serif
+}
+
+html:has(.is-open){
+    /* Zorgt ervoor dat je niet kan scrollen als het hamburger menu open is */
+    overflow: hidden;
+}
+
+header {
+    position:relative;
+    z-index: 10;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.8em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+ul {
+    /* Zorgt dat de puntjes vóór het list-element niet zichtbaar zijn */
+    list-style: none;
+}
+
+
+
+/* Eerste navigatiebalk */
+.audience-and-language {
+    display: flex;
+    gap: 0.5em;
+    padding: 1em 1em 0;
+    background-color: #333A73;
+}
+/* Link kleuren aanpassen */
+.audience-and-language a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.audience-and-language a:nth-of-type(1) {
+    background-color: white;
+    border-radius: 5px 5px 0  0;
+    color: #333A73;
+}
+
+.audience-and-language a:nth-of-type(3) {
+    margin-left: auto;
+}
+
+.audience-and-language a:nth-of-type(2):hover, a:nth-of-type(3):hover, a:nth-of-type(4):hover{
+    color: #FBA834;
+}
+
+
+/* Tweede navigatiebalk */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    border-bottom: 3px solid #333A73;
+    background-color: white;
+}
+
+/* Hamburger menu functionaliteit en lijst kleur*/
+.ham-menu {
+    position:absolute;
+
+    background-color:#333A73;
+
+    top:100%;
+    left:0;
+    right:0;
+
+    margin:0;
+    padding:1em;
+    /* Lijst in hamburger menu is niet zichtbaar */
+    translate:-100%;
+    transition: 0.25s;
+}
+
+.ham-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+.ham-menu a:hover {
+    border-bottom: 4px solid#FBA834;
+}
+
+.ham-menu.is-open {
+    /* Lijst in hamburger menu is zichtbaar */
+    translate: 0;
+}
+
+/* Hamburger menu functionaliteit, grijze/ wazige achtergrond */
+.grey-scale {
+    position: fixed;
+    inset: 0;
+
+    background-color: #fff9;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+
+    transition: 0.25s;
+}
+
+.grey-scale.is-open {
+    opacity: 1;
+    backdrop-filter: blur(3px);
+    pointer-events: all;
+}
+
+/* Hamburger menu knop kleuren */
+.ham-menu-button {
+    background-color: white;
+    padding: 0;
+    border: none;
+}
+
+.ham-menu-button svg {
+    width: 4em;
+    fill: #333A73;
+}
+.ham-menu-button svg:hover {
+    fill: #FBA834;
+    cursor: pointer;
+}
+
+/* Drop-down navigatie in menu*/
+details:last-of-type summary {
+  list-style: none;
+  cursor: pointer;
+
+  &::after {
+    content: "⏷";
+    font-size: 2em;
+    color: #FBA834;
+    border-radius: 1em;
+    font-weight: bold;
+    padding: 0 5px;
+    margin-inline-start: 5px;
+  }
+  
+  [open] &::after {
+    content: "⏶";
+  }
+}
+
+details:last-of-type summary::-webkit-details-marker {
+    /* Om standaard driehoek in de drop-down te verwijderen */
+    display: none;
+}
+
+/* Drop-down meer naar rechts in menu */
+.drop-down {
+    padding-left: 2em;
+}
+
+/* Logo die linkt naar home-pagina */
+.logo svg {
+    height: 3em;
+}
+
+/* Zoekknop kleuren */
+.search svg {
+    width: 3em;
+    fill: #333A73;
+}
+.search svg:hover {
+    fill: #FBA834;
+}
+
+
+
+/* Eerste gedeelte op home-pagina, welkom op de website */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1em;
+}
+
+/* Sectie 'Wat is een Ad?' */
+.what-is-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Sectie 'Wat is een Ad?', pijl naar pagina */
+.what-is-ad svg{
+    height: 2em;
+}
+.what-is-ad svg:hover {
+    transform: translate(10px);
+    transition: 0.25s;
+    fill:#FBA834;
+}
+
+
+
+/* Tweede gedeelte op home-pagina, extra navigatieknoppen */
+.navigation-on-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    padding: 1em 1em 2em;
+    /* margin: 3em 0.6em ; */
+
+    @media (min-width: 500px){
+        gap: 3em;
+    }
+
+    @media (min-width: 767px){
+        justify-content: space-evenly;
+    }
+}
+
+/* Navigatieknoppen zelf */
+.navigation-on-page a {
+    /* Zorgt er voor dat een inline-element zich kan gedragen als een block-element */
+    display: block;
+    font-size: 1.3em;
+    color: white;
+    background-color: #333A73;
+    box-shadow: 2px 2px 5px rgb(95, 95, 95);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0;
+    text-decoration: none;
+
+    @media (min-width: 500px){
+        font-size: 1.7em;
+    }
+}
+.navigation-on-page a:hover {
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+
+
+
+/* Derde gedeelte home-pagina, laatste nieuws */
+.latest-news h2 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0.5em;
+    gap: 0.3em;
+    text-decoration: underline;
+    text-decoration-color: #333A73;
+}
+.latest-news h2 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FBA834;
+}
+
+/* Laatste nieuws, kleine logos zeikanten */
+.latest-news svg {
+    width: 1em;
+}
+
+.latest-news svg:nth-of-type(1){
+    rotate: 25deg;
+}
+
+.latest-news svg:nth-of-type(2){
+    transform: scale(-1,-1);
+    rotate: -25deg;
+}
+
+/* Laatste nieuws, container voor artikelen */
+.latest-news ul {
+    margin: 1em 1em 0;
+    padding: 0 0 1em;
+    gap: 1em;
+    list-style-type:"";
+
+    display: flex;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+}
+
+.latest-news h3 {
+    margin-top: 0;
+}
+
+/* Laatste nieuws, artikelen */
+.latest-news li {
+    /* width: 90%;
+    max-width: 22em; */
+    width: min(100%, 22em);
+    flex-shrink: 0;
+
+    @media (min-width:45em){
+        width: calc((100% - 1em) / 2);
+        scroll-snap-align: start;
+    }
+
+    @media (min-width: 54em){
+        flex-shrink: 1;
+    }
+}
+
+.latest-news article {
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    scroll-snap-align: center;
+
+    border: 5px solid #FBA834;
+    border-radius: 10px;
+    
+}
+
+/* Laatste nieuws, knoppen links en rechts */
+.latest-news button {
+    @media (min-width: 54em){
+        display:none;
+    }
+}
+
+.latest-news ul a{
+    background-color: #333A73;
+    border-radius: 5px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+.latest-news ul a:hover {
+    /* text-decoration: underline;
+    text-decoration-color: #FBA834; */
+    background-color: #fba834bc;
+    color: #333A73;
+}
+
+
+
+/* Deelnemende Hogescholen */
+.participating-colleges ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+    padding: 0;
+}
+
+
+
+/* Knop naar boven van de pagina */
+.button-to-top { 
+    position: sticky;
+    bottom: 2%;
+    left: 90%;
+
+    color: rgba(255, 255, 255, 0.613);
+    border-radius: 50%;
+    background-color: #333a73db;
+    padding: 5px;
+    margin: 0.5em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.button-to-top:hover {
+    color: white;
+    background-color: #333A73;
+}
+
+
+
+/* Footer sectie */
+footer {
+    margin-top: 1em;
+    padding: 1em;
+    background-color:#333A73;
+
+    @media (min-width: 680px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+footer h2 {
+    color: white;
+    font-size: 1.1em;
+    width: fit-content;
+    border-bottom: 2px solid white;
+
+    @media (min-width: 680px){
+        font-size: 1.4em;
+    }
+}
+
+/* Footer link kleuren en hover */
+footer a {
+    text-decoration: none;
+    line-height: 1.5em;
+    color: white;
+    width: fit-content;
+
+     @media (min-width: 680px){
+        font-size: 1.3em;
+     }
+}
+footer a:hover{
+    cursor: pointer;
+    color: #FBA834;
+    text-decoration: underline;
+    text-decoration-color: #FBA834;
+}
+
+/* Sectie bestuurs namen in footer */
+.board-members {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+/* Sectie platform ad in footer */
+.platform-ad {
+    @media (min-width: 680px){
+        padding-left: 7em;
+    }
+}
+/* Sectie platform ad in footer, container voor over-ons en contact */
+.platform-ad ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
